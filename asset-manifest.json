@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/tg-webapp/static/css/main.c4757c79.css",
+    "main.js": "/tg-webapp/static/js/main.1062507d.js",
+    "static/js/453.f75822b7.chunk.js": "/tg-webapp/static/js/453.f75822b7.chunk.js",
+    "static/media/newalvaro-pinot-czDvRp5V2b0-unsplash.jpg": "/tg-webapp/static/media/newalvaro-pinot-czDvRp5V2b0-unsplash.d076cf186de6d3996de9.jpg",
+    "index.html": "/tg-webapp/index.html",
+    "main.c4757c79.css.map": "/tg-webapp/static/css/main.c4757c79.css.map",
+    "main.1062507d.js.map": "/tg-webapp/static/js/main.1062507d.js.map",
+    "453.f75822b7.chunk.js.map": "/tg-webapp/static/js/453.f75822b7.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c4757c79.css",
+    "static/js/main.1062507d.js"
+  ]
+}
