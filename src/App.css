@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
+
+@import url("https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css");
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700');
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,700');
+body{
+    font-family: var(--bs-body-font-family);
+    font-size: 10px;
+}
+*:hover{
+    -webkit-transition: all 0.5s ease;
+    transition: all 0.2s ease;
+}
+*::after{
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.2s ease;
+}
+section{
+    float:left;
+    width:100%;
+    background: #fff;
+    padding:30px 0;
+}
+h1{float:left; width:100%; color:#232323; margin-bottom:30px; font-size: 14px;}
+h1 span{font-family: 'Libre Baskerville', serif; display:block; font-size:45px; text-transform:none; margin-bottom:20px; margin-top:30px; font-weight:700}
+h1 a{color:#131313; font-weight:bold;}
+
+
+img {
+  max-width: 100%;
+  height: auto;
+  content: "";
+  opacity: 0.4;
+  z-index: 2;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+
+.bg-primary {
+  background-color: rgba(255, 0, 0, 0.2)!important;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.profile-card-1 .card-content {
+  padding: 15px 15px 15px 15px ;
+  position:relative;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* copy button */
+.profile-card-1 button {
+    font-size: 15px;
+    color: #515151;
+    background-color:#e6e6e6;
+    border: 1px solid #ffffff;
+    padding: 3px 7px;
+
+    justify-content: center;
+
+    border-radius: 30%;
+    transition: all 0.1s ease-in-out;
+}
+
+
+button {
+  border-radius: 8px;
+  border: 1px solid transparent;
+  padding: 0.4em 1em;
+  font-size: 1em;
+  font-weight: 500;
+  font-family: inherit;
+  background-color: #1a1a1a;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+
+.profile-card-1 button:active {
+  transform: scale(0.85);
+}
+
+.profile-card-1 button:hover {
+    border-color: transparent;
+}
+
+
+.scroll-button i{
+  position: fixed; 
+  font-size: 50px;
+  background-color: transparent;
+
+  color: #7880b1;
+
+  width: 40px;
+  height: 40px;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  border-radius: 100%;
+  right: 40px;
+  bottom: 50px;
+  z-index: 1; 
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+
+.load-more button {
+  border-radius: 7px;
+  margin-bottom: 30px;
+  border: 0px;
+  background-color:#e4e4e4;
+  font-size: 20px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.load-more button:active {
+  transform: scale(0.9);
+}
+
+.button-shrink {
+  color: #65b5f6;
+  background-color: transparent;
+  border: 1px solid #65b5f6;
+  border-radius: 4px;
+  padding: 0 16px;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.button-shrink:hover {
+  transform: scale(0.8);
+}
+
+.small-card {
+  width: 100%;
+  font-size: 14px;
+  background-color:#f0f0f0;
+  color: #696969;
+  border-radius: 6px;
+  border: 1px solid #cecece;
+  font-family: monospace;
+  font-weight: 600;
+}
+
+.small-card::before{ content: "\00a0 "; }
+.small-card::after{ content: "\00a0 "; }
+
+.profile-card-1 .icon-block{
+    float:left;
+    width:100%;
+    margin-top:15px;
+}
+.profile-card-1 .icon-block a{
+    text-decoration:none;
+}
+
+
+
+.box {
+  display: flex;
+  -webkit-display: flex;
+}
+
+.one {
+  flex: 1 1 100px;
+}
+
+@media only screen and (max-width : 799px) {
+  .one2 {
+    flex: 0;
   }
-  to {
-    transform: rotate(360deg);
+}
+
+/* Desktop */
+@media only screen and (min-width : 800px) {
+  .one2 {
+    flex: 1 1 100px;
   }
+}
+
+.two {
+  flex: 8 1;
 }
